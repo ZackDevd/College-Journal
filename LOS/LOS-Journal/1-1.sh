@@ -1,0 +1,37 @@
+echo "Enter First Number:"
+read a
+
+echo "Enter Second Number:"
+read b
+
+echo "Enter Operation (+, -, *, /, %):"
+read op
+
+case $op in 
+	+) result=$((a + b))
+		echo "Result = $result"
+		;;
+	-) result=$((a - b))
+		echo "Result = $result"
+		;;
+	\*) result=$((a * b))
+		echo "Result = $result"
+		;;
+	/) if [ $b -ne 0 ]; then
+		result=$((a / b))
+		echo "Result = $result"
+	else
+		echo "Error: Division by zero not allowed"
+		fi
+		;;
+	%) if [ $b -ne 0 ]; then
+		result=$((a % b))
+		echo "Result = $result"
+	else
+		echo "Error: Modulo by zero not allowed"
+		fi
+		;;
+	*) echo "Invalid operation"
+		;;
+esac
+

@@ -1,0 +1,18 @@
+echo "Enter time in 24-horu format (0-23):"
+read hour
+
+if [ $hour -ge 0 ] && [ $hour -lt 12 ];
+then
+	echo "Good Morning"
+elif [ $hour -ge 12 ] && [ $hour -lt 17 ];
+then
+	echo "Good Afternoon"
+elif [ $hour -ge 17 ] && [ $hour -lt 21 ];
+then
+	echo "Good Evening"
+elif [ $hour -ge 21 ] && [ $hour -lt 24 ];
+then
+	echo "Good Night"
+else
+	echo "Invalid hour entered! Please enter a value between 0 to 23."
+fi

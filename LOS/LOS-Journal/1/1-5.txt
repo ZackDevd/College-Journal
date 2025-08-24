@@ -1,0 +1,11 @@
+echo "Enter a string: "
+read str
+
+length=${#str}
+
+        if [ $length -lt 10 ];
+        then
+                echo "The string is too short (Only $length characters). It must have at least 10 characters."
+        else
+                echo "Valid string! It has $length characters."
+        fi

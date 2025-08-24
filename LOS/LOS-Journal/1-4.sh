@@ -1,0 +1,28 @@
+username="chintan"
+password="12345678"
+
+attempt=1
+max_attempts=3
+
+while [ $attempt -le $max_attempts ]
+do
+	echo "Attempt $attempt of $max_attempts"
+
+	echo -n "Enter Username: "
+	read user
+
+	echo -n "Enter Password: "
+	read pass
+
+	if [ "$user" = "$username" ] && [ "$pass" = "$password" ];
+	then
+		echo "Valid User - Login Successful!"
+		exit 0
+	else
+		echo "Invalid User. Try Again."
+	fi
+
+	attempt=$((attempt + 1))
+done
+
+echo "Maximum Attempts reached. Access Denied!"

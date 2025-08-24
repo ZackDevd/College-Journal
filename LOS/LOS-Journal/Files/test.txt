@@ -1,0 +1,11 @@
+Line 10: Networking in Linux
+Line 11: Unix is multiuser
+Line 12: File handling in C
+Line 13: 
+Line 14: RAM improves performance
+Line 15: ROM is permanent
+Line 16: Unix powers many servers
+Line 17: Cloud runs on Linux
+Line 18: 
+Line 19: End of section
+Line 20: 

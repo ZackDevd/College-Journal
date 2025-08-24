@@ -1,0 +1,5 @@
+1234 This line starts with numbers
+Unix is an OS
+9 Lives of a cat
+Linux kernel 6.0
+Hello World
